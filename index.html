@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="emoji-bg">
+    <span>🎂</span>
+    <span>🎉</span>
+    <span>🎈</span>
+    <span>🥳</span>
+    <span>🎁</span>
+    <span>🎊</span>
+    <span>💖</span>
+    <span>✨</span>
+    <span>🎀</span> 
+  </div>
+  <div class="envelope-wrapper">
+    <div id="envelope" class="close">
+      <div class="flap top"></div>
+      <div class="flap left"></div>
+      <div class="flap right"></div>
+      <div class="flap bottom"></div>
+      <div class="pocket"></div>
+      <img class="corner-img top-left" src="somya.jpeg" alt="corner1">
+      <img class="corner-img top-right" src="somyaaR.jpeg" alt="corner2">
+      <img class="corner-img left" src="rob.jpeg" alt="corner3">
+      <img class="corner-img right" src="robl.jpeg" alt="corner4">
+      <img class="corner-img bottom-left" src="somyaaa.jpeg" alt="corner5">
+      <img class="corner-img bottom-right" src="somyaaaa.jpeg" alt="corner6">
+      <img class="corner-img top" src="Screenshot 2025-07-24 223823.png" alt="corner7">
+      <img class="corner-img bottomimg" src="Screenshot 2025-07-24 223846.png" alt="corner8">
+<div class="envelope-text">To my boondi ka ladduu--</div>
+      <div class="letter">
+        <h1>Happiest birthdayyyay somiiiiiieee</h1>
+        <p class="words line1">big bhondu bandar</p>
+        <p class="words line2">17🥂 yrs of "late realisations"</p>     
+        <p class="words line3"> "sada mere raho"</p>
+        <p class="words line4"> with all love--
+          dumb~
+        </p>
+      </div>
+      <div class="hearts">
+        <div class="heart a1"></div>
+        <div class="heart a2"></div>
+        <div class="heart a3"></div>
+        <div class="heart a4"></div>
+        <div class="heart a5"></div>
+      </div>
+    </div>
+    <div class="reset">
+      <button id="openBtn">OPEN Me</button>
+      <button id="closeBtn" style="display:none;">CLOSE Me</button>
+    </div>
+  </div>
+  <script>
+    const envelope = document.getElementById('envelope');
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    openBtn.onclick = function() {
+      envelope.classList.add('open');
+      envelope.classList.remove('close');
+      openBtn.style.display = 'none';
+      closeBtn.style.display = 'inline-block';
+    };
+    closeBtn.onclick = function() {
+      envelope.classList.remove('open');
+      envelope.classList.add('close');
+      closeBtn.style.display = 'none';
+      openBtn.style.display = 'inline-block';
+    };
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+</html>
